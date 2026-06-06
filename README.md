@@ -17,11 +17,11 @@ Full network topology — VPC, subnets, IGW, NAT Gateway, and route tables.
 ![tf-vpc-resource](docs/images/tf-resourcemap.png)
 
 
-##terraform Plan->
+## terraform Plan->
 
 ![tf-paln](docs/images/tf-plan01.png)
 
-##terraform apply->
+## terraform apply->
 ![tf-paln](docs/images/tf-output.png)
 
 
