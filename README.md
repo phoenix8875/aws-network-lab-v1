@@ -6,6 +6,20 @@ A production-style 3-tier architecture on AWS, built both manually and as Infras
 
 ---
 
+## Architecture
+
+```
+          Internet
+              │
+              ▼
+      [ web-server ]        ← Public Subnet  · Nginx Reverse Proxy
+              │
+              ▼
+      [ app-server ]        ← Private Subnet · Python Flask API
+              │
+              ▼
+      [ db-server  ]        ← DB Subnet      · MariaDB
+```
 # AWS 3-Tier Architecture — Network Design
 ### VPC: `network-lab-vpc` · CIDR: `10.0.0.0/16` · Region: `ap-south-1` (Mumbai)
 
@@ -159,7 +173,6 @@ db-server (private subnet)
 app-server → web-server → User Browser
 ```
 
-
 ---
 
 ## Project Structure
@@ -213,7 +226,7 @@ terraform apply tfplan
 terraform destroy
 ```
 
-
+> ⚠️ NAT Gateway costs ~$32/month. Always `terraform destroy` after testing.
 
 ---
 
