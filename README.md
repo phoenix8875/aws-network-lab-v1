@@ -12,15 +12,18 @@ A production-style 3-tier architecture on AWS, built both manually and as Infras
 Full network topology — VPC, subnets, IGW, NAT Gateway, and route tables.
 ![VPC Resource Map](docs/images/manualvpc.png)
 
-### VPC Resource Map with Terraform
-terraform Plan->
-![tf-paln](docs/images/tf-plan01.png)
-
-terraform apply->
-![tf-paln](docs/images/tf-output.png)
 
 ### VPC Resource Map with Terraform Setup
 ![tf-vpc-resource](docs/images/tf-resourcemap.png)
+
+
+##terraform Plan->
+
+![tf-paln](docs/images/tf-plan01.png)
+
+##terraform apply->
+![tf-paln](docs/images/tf-output.png)
+
 
 ## Full Architecture
 
